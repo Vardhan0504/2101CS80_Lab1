@@ -35,6 +35,22 @@ void selectionSort(int arr[], int n)
     }
 }
 
+// Bubble Sort
+void bubbleSort(int arr[], int n)
+{
+    int i, j;
+    for (i = 0; i < n - 1; i++)
+    {
+        for (j = 0; j < n - i - 1; j++)
+        {
+            if (arr[j] > arr[j + 1])
+            {
+                swap(arr[j], arr[j + 1]);
+            }
+        }
+    }
+}
+
 int main()
 {
     int n;
@@ -47,6 +63,7 @@ int main()
     int x;
     printf("Enter 1 for Insertion Sort\n");
     printf("Enter 2 for Selection Sort\n");
+    printf("Enter 3 for Bubble Sort\n");
     scanf("%d", &x);
     switch (x)
     {
@@ -59,6 +76,13 @@ int main()
         printf("\n");
     case 2:
         selectionSort(array, n);
+        for (int i = 0; i < n; i++)
+        {
+            printf("%d ", array[i]);
+        }
+        printf("\n");
+    case 3:
+        bubbleSort(array, n);
         for (int i = 0; i < n; i++)
         {
             printf("%d ", array[i]);
