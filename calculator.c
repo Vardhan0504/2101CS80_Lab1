@@ -9,6 +9,8 @@ int main()
     printf("A-B=%d", a - b);
     // Multiplication
     printf("A*B=%d", a * b);
+    // Division
+    printf("A/B=%f", a / b);
 
     return 0;
 }
