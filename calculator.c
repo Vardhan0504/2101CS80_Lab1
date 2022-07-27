@@ -7,6 +7,8 @@ int main()
     printf("A+B=%d", a + b);
     // Substraction
     printf("A-B=%d", a - b);
+    // Multiplication
+    printf("A*B=%d", a * b);
 
     return 0;
 }
